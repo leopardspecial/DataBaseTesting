@@ -25,10 +25,23 @@
         </dependency>
 
         <dependency>
-            <groupId>cz.pumpitup.pn5.reporting</groupId>
+            <groupId>au.com.dius.pact.provider</groupId>
             <artifactId>junit</artifactId>
-            <version>0.4.9</version>
+            <version>4.1.7</version>
         </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
     </dependencies>
 
     <build>
