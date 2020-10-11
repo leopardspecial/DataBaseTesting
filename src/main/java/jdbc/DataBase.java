@@ -26,6 +26,7 @@ public class DataBase {
         try (PreparedStatement preparedStatement = connection.prepareStatement(SQLCommand.SELECT.QUERRY)) {
             preparedStatement.setString(1, student.getSecondName());
             preparedStatement.setString(2, student.getFirstName());
+            preparedStatement.setString(3, student.getPatronymic());
 
             ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -44,6 +45,7 @@ public class DataBase {
         try (PreparedStatement preparedStatement = connection.prepareStatement(SQLCommand.INSERT.QUERRY)) {
             preparedStatement.setString(1, student.getSecondName());
             preparedStatement.setString(2, student.getFirstName());
+            preparedStatement.setString(3, student.getPatronymic());
             preparedStatement.execute();
             System.out.println("The student was successfully added to the table");
         } catch (SQLException e) {

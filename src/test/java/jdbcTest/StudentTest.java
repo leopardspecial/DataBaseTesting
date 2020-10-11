@@ -21,9 +21,9 @@ public class StudentTest {
     private DataBase dataBase;
     private boolean checkResult = true;
 
-    @Дано("^создаём студента c именем \"([^\"]*)\" и фамилией \"([^\"]*)\"$")
-    public void createStudent(String firstName, String secondName) {
-        student = new Student(firstName, secondName);
+    @Дано("^создаём студента c именем \"([^\"]*)\", фамилией \"([^\"]*)\" и отчеством \"([^\"]*)\"$")
+    public void createStudent(String firstName, String secondName, String patronymic) {
+        student = new Student(firstName, secondName, patronymic);
     }
 
     @Дано("^создаём соединение с базой данных$")
