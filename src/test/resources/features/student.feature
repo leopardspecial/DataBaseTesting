@@ -13,7 +13,7 @@
 
 
     Примеры:
-      | имя     | фамилия   | отчество     |
-      | "Peter" | "Barking" | "Petrovichich"  |
-      | "Globe" | "Ponk"    | "Penkovich"  |
-      | "Henry" | "Zippy"   | "Samplovich" |
+      | имя     | фамилия   | отчество       |
+      | "Peter" | "Barking" | "Petrovichich" |
+      | "Globe" | "Ponk"    | "Penkovich"    |
+      | "Henry" | "Zippy"   | "Samplovich"   |

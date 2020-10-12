@@ -5,6 +5,7 @@ public enum SQLCommand {
     INSERT("INSERT INTO student (second_name, first_name, patronymic) VALUES ((?), (?), (?))");
 
     String QUERRY;
+
     SQLCommand(String QUERRY) {
         this.QUERRY = QUERRY;
     }
