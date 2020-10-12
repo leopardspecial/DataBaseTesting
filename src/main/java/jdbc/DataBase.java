@@ -2,7 +2,6 @@ package jdbc;
 
 
 import lombok.Data;
-import lombok.NonNull;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -35,13 +34,14 @@ public class DataBase {
             } else {
                 selectResult = true;
             }
+            resultSet.close();
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
         return selectResult;
     }
 
-    public void insertFromStrudentTable(Student student) {
+    public void insertIntoStrudentTable(Student student) {
         try (PreparedStatement preparedStatement = connection.prepareStatement(SQLCommand.INSERT.QUERRY)) {
             preparedStatement.setString(1, student.getSecondName());
             preparedStatement.setString(2, student.getFirstName());

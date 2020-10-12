@@ -6,9 +6,6 @@ import cucumber.api.java.ru.Когда;
 import cucumber.api.java.ru.То;
 import jdbc.DataBase;
 import jdbc.Student;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -19,7 +16,7 @@ public class StudentTest {
     private Student student;
     private Connection connection;
     private DataBase dataBase;
-    private boolean checkResult = true;
+    private boolean checkResult;
 
     @Дано("^создаём студента c именем \"([^\"]*)\", фамилией \"([^\"]*)\" и отчеством \"([^\"]*)\"$")
     public void createStudent(String firstName, String secondName, String patronymic) {
@@ -44,7 +41,7 @@ public class StudentTest {
     @То("^добавляем его, если отсутствует$")
     public void insertStudentInDataBase() {
         if (!checkResult) {
-            dataBase.insertFromStrudentTable(student);
+            dataBase.insertIntoStrudentTable(student);
         } else {
             System.out.println("This student is already in the table");
         }

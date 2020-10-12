@@ -14,6 +14,6 @@
 
     Примеры:
       | имя     | фамилия   | отчество     |
-      | "Peter" | "Barking" | "Petrovick"  |
+      | "Peter" | "Barking" | "Petrovichich"  |
       | "Globe" | "Ponk"    | "Penkovich"  |
       | "Henry" | "Zippy"   | "Samplovich" |
